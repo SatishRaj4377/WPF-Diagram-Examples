@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace RulerCustomization
 {
@@ -14,8 +15,8 @@ namespace RulerCustomization
         public RulerViewModel()
         {
             //Initialize the horizontal and vertical rulers.
-            this.HorizontalRuler = new CustomRuler();
-            this.VerticalRuler = new CustomRuler() { Orientation = Orientation.Vertical };
+            this.HorizontalRuler = new CustomRuler() { MarkerBrush = Brushes.Red };
+            this.VerticalRuler = new CustomRuler() { Orientation = Orientation.Vertical, MarkerBrush = Brushes.Green };
         }
     }
 
